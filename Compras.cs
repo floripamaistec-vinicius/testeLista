@@ -1,13 +1,13 @@
 ﻿public class Compras
 {
-    public string Produto { get; set; }
+    public string Nome { get; set; }
     public int Quantidade { get; set; }
     public double Preco { get; set; }
     public Compras() { 
     }
-    public Compras(string produto, int quantidade, double preco) : this()
+    public Compras(string nome, int quantidade, double preco) : this()
     {
-        Produto = produto;
+        Nome = nome;
         Quantidade = quantidade;
         Preco = preco;
     }

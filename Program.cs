@@ -17,17 +17,17 @@ ListaDeCompras.Add(item7);
 
 Console.WriteLine($"Quantidade de itens na lista de compras: {ListaDeCompras.Count()}");
 
-Console.WriteLine($"Nome do produto: {ListaDeCompras[5].Produto}, Quantidade do Produto: {ListaDeCompras[5].Quantidade}");
+Console.WriteLine($"Nome do produto: {ListaDeCompras[5].Nome}, Quantidade do Produto: {ListaDeCompras[5].Quantidade}");
 
 for (int index = 0; index < ListaDeCompras.Count; index++)
 {
-    if (ListaDeCompras[index].Produto == "Coca-Cola") {
+    if (ListaDeCompras[index].Nome == "Coca-Cola") {
         Console.WriteLine();
         Console.WriteLine($"Encontrei a Coca-Cola no índice {index}");
-        Console.WriteLine($"Essa {ListaDeCompras[index].Produto}");
-        ListaDeCompras[index].Produto = "Fanta";
-        Console.WriteLine($"Agora é {ListaDeCompras[index].Produto}");
-        Console.WriteLine(ListaDeCompras[index].Produto);
+        Console.WriteLine($"Essa {ListaDeCompras[index].Nome}");
+        ListaDeCompras[index].Nome = "Fanta";
+        Console.WriteLine($"Agora é {ListaDeCompras[index].Nome}");
+        Console.WriteLine(ListaDeCompras[index].Nome);
         
     } else
     {
@@ -35,6 +35,7 @@ for (int index = 0; index < ListaDeCompras.Count; index++)
         Console.WriteLine();
         Console.WriteLine($"Índice na lista: {index}");
         Console.ReadLine();
-        Console.WriteLine($"Index {index}, {ListaDeCompras[index].Produto}, {ListaDeCompras[index].Quantidade}");
+        Console.WriteLine($"Index {index}, {ListaDeCompras[index].Nome}, {ListaDeCompras[index].Quantidade}");
+        Console.ReadLine();
     }
 }
